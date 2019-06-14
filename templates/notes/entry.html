@@ -1,0 +1,6 @@
+<h2>Here's the textbox</h2>
+<form action="{% url 'notes:submit' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="text" id="text">
+    <input type="submit" value="Submit">
+</form>
